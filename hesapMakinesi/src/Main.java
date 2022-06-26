@@ -25,7 +25,12 @@ public class Main {
                 System.out.println("Çarpma: " + (n1 * n2));
                 break;
             case 4:
-                System.out.println("Bölme: " + (n1 / n2));
+                if (n2 == 0){
+                    System.out.println("0'a bölme hatasý");
+                }
+                else{
+                    System.out.println("Bölme: " + (n1 / n2));
+                }
                 break;
             default:
                 System.out.println("Hatalý giriþ.");
