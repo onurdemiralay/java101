@@ -5,13 +5,13 @@ public class Main {
         int n1, n2, select;
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Ýlk Sayýyý Giriniz: ");
+        System.out.print("Ilk Sayiyi Giriniz: ");
         n1 = input.nextInt();
-        System.out.print("Ýkinci Sayýyý Giriniz: ");
+        System.out.print("Ikinci Sayiyi Giriniz: ");
         n2 = input.nextInt();
 
-        System.out.println("1-Toplam\n2-Çýkarma\n3-Çarpma\n4-Bölme");
-        System.out.print("Seçiminiz: ");
+        System.out.println("1-Toplam\n2-Ã‡ikarma\n3-Ã‡arpma\n4-BÃ¶lme");
+        System.out.print("SeÃ§iminiz: ");
         select = input.nextInt();
 
         switch (select){
@@ -19,21 +19,21 @@ public class Main {
                 System.out.println("Toplam: " + (n1 + n2));
                 break;
             case 2:
-                System.out.println("Çýkarma: " + (n1 - n2));
+                System.out.println("Ã‡ikarma: " + (n1 - n2));
                 break;
             case 3:
-                System.out.println("Çarpma: " + (n1 * n2));
+                System.out.println("Ã‡arpma: " + (n1 * n2));
                 break;
             case 4:
                 if (n2 == 0){
-                    System.out.println("0'a bölme hatasý");
+                    System.out.println("0'a bÃ¶lme hatasi");
                 }
                 else{
-                    System.out.println("Bölme: " + (n1 / n2));
+                    System.out.println("BÃ¶lme: " + (n1 / n2));
                 }
                 break;
             default:
-                System.out.println("Hatalý giriþ.");
+                System.out.println("HatalÃ½ giriÃ¾.");
                 break;
         }
     }
